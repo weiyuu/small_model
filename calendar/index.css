@@ -1,0 +1,90 @@
+* {
+     margin: 0;
+     padding: 0;
+}
+a {
+    text-decoration: none;
+    color: grey;
+    font-size: 40px;
+}
+.calendar {
+    width: 450px;
+    height: 350px;
+    background-color: #fff;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, .1)
+}
+.title {
+    height: 20%;
+    position: relative;
+}
+#calendar-month {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 10px;
+}
+#calendar-year {
+    font-size: 18px;
+    text-align: center;
+}
+
+#prev {
+    float: left;
+    position: absolute;   
+    left: 15px;
+    top: 10px;
+}
+#next {
+    float: right;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+
+
+.body {
+    height: 80%;
+    border-top: 1px solid grey;
+    padding-top: 5px;
+}
+
+
+.body-list ul {
+    height: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.body-list ul li {
+    width: 13.5%;
+    height: 30px;
+    line-height: 30px;
+    list-style: none;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+
+.lightgrey {
+    color: #a8a8a8;
+}
+.darkgrey {
+    color: #565656;
+}
+.green {
+    color: #6ac13c;
+}
+.greenbox {
+    border: 1px solid #6ac13c;
+    background: #e9f8df;
+}
+
+
+
+
+
+
+
+
