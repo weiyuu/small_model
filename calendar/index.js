@@ -14,23 +14,23 @@ var ctitle = document.getElementById("calendar-month");
 var cyear = document.getElementById("calendar-year");
 
 // 获取当前日期
-
 var my_date = new Date();
-console.log(my_date)
+// 获取当前日期的年、月、日
 var my_year = my_date.getFullYear(),
     my_month = my_date.getMonth(),
     my_day = my_date.getDate();
 
-//  获取某月第一天是星期几
 
+
+//  获取某月第一天是星期几
 function dayStart(month, year) {
 	var tmpDate = new Date(year, month, 1);
-	return (tmpDate.getDay());
+	return tmpDate.getDay();
 }
 
 // 判定是否为闰年,并返回月份天数
-
 function daysMonth(month,year) {
+    // 闰年标准“能整除4同时不能整除100” 或者“能整除400”
     var tmp = (year % 4 == 0 && year %100 != 0)||(year % 400 == 0);
     if(tmp) {
         return month_olympic[month]
@@ -71,7 +71,6 @@ refreshDate(my_year,my_month,my_day);
 prev.onclick = function(event) {
     event.preventDefault();
     my_month-=1;
-    console.log(my_month)
     if(my_month < 0) {
         my_year-=1;
         my_month = 11;
