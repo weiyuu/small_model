@@ -85,6 +85,7 @@ a {
     height: 80%;
     border-top: 1px solid grey;
     padding-top: 5px;
+    position: relative;
 }
 
 
@@ -103,7 +104,14 @@ a {
     text-align: center;
 }
 
-
+#today {
+    position: absolute;
+    height: 25px;
+    width: 50px;
+    font-size: 14px;
+    right: 20px;
+    bottom: 10px;
+}
 
 .body-content ul li {
     width: 14.2%;
